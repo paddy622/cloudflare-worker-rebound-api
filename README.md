@@ -1,37 +1,79 @@
-# ʕ •́؈•̀) `workers-typescript-template`
+# Rebound API - Cloudflare Worker 
 
-A batteries included template for kick starting a TypeScript Cloudflare worker project.
+This is a cloudflare worker project that creates an API that will rebound any request data in JSON form.
+GET APIs - Query string parameters will be returened as json object in response.
+POST APIs - Post request body will be returned as simple json object in reponse.
 
-## 🔋 Getting Started
+## Getting Started
 
-This template is meant to be used with [Wrangler](https://github.com/cloudflare/wrangler). If you are not already familiar with the tool, we recommend that you install the tool and configure it to work with your [Cloudflare account](https://dash.cloudflare.com). Documentation can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler/).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-To generate using Wrangler, run this command:
+### Prerequisites
 
-```bash
-wrangler generate my-ts-project https://github.com/EverlastingBugstopper/worker-typescript-template
+What things you need to install the software and how to install them
+
+```
+Give examples
 ```
 
-### 👩 💻 Developing
+### Installing
 
-[`src/index.js`](./src/index.ts) calls the request handler in [`src/handler.ts`](./src/handler.ts), and will return the [request method](https://developer.mozilla.org/en-US/docs/Web/API/Request/method) for the given request.
+A step by step series of examples that tell you how to get a development env running
 
-### 🧪 Testing
+Say what the step will be
 
-This template comes with mocha tests which simply test that the request handler can handle each request method. `npm test` will run your tests.
+```
+Give the example
+```
 
-### ✏️ Formatting
+And repeat
 
-This template uses [`prettier`](https://prettier.io/) to format the project. To invoke, run `npm run format`.
+```
+until finished
+```
 
-### 👀 Previewing and Publishing
+End with an example of getting some data out of the system or using it for a little demo
 
-For information on how to preview and publish your worker, please see the [Wrangler docs](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#publish).
+## Running the tests
 
-## 🤢 Issues
+Explain how to run the automated tests for this system
 
-If you run into issues with this specific project, please feel free to file an issue [here](https://github.com/cloudflare/workers-typescript-template/issues). If the problem is with Wrangler, please file an issue [here](https://github.com/cloudflare/wrangler/issues).
+### Break down into end to end tests
 
-## ⚠️ Caveats
+Explain what these tests test and why
 
-The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/tooling/wrangler/configuration/environments/) to test things before deploying.
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Cloudflare workers](https://developers.cloudflare.com/workers/) - CDN
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Pradeep Patil** - *Initial work* - [paddy622](https://github.com/paddy622)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

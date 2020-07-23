@@ -1,4 +1,4 @@
-name = "test-worker"
+name = "rebound-api"
 type = "webpack"
 account_id = "677e1e802d4bd3cc3f85f7c13b848bf9"
 workers_dev = true

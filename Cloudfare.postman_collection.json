@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "18d61645-b2c5-45fb-9477-1d846c8fecac",
+		"name": "Cloudfare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rebound-api-post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"test\": \"test1\",\r\n    \"test2\": \"test2\",\r\n    \"testsfsfdf\": \"uksdfkjhsdfkjshdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rebound-api.pradeep-patil.workers.dev",
+					"protocol": "https",
+					"host": [
+						"rebound-api",
+						"pradeep-patil",
+						"workers",
+						"dev"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rebound-api-get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://rebound-api.pradeep-patil.workers.dev?userid=876sf76s8f6sd89f6s89d&username=pradeep",
+					"protocol": "https",
+					"host": [
+						"rebound-api",
+						"pradeep-patil",
+						"workers",
+						"dev"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "876sf76s8f6sd89f6s89d"
+						},
+						{
+							"key": "username",
+							"value": "pradeep"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
